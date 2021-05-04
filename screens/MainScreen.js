@@ -38,40 +38,6 @@ const MainScreen = ({navigation}) => {
 
   return (
     <View>
-      {/* <Button
-          title="Pay"
-          onPress={() => {
-            var options = {
-              description: 'Credits towards consultation',
-              image: 'https://i.imgur.com/3g7nmJC.png',
-              currency: 'INR',
-              key: 'rzp_test_xNmBWr6pU4FjYE',
-              amount: '5000',
-              name: 'Acme Corp',
-              external: {
-                wallets: ['paytm'],
-              },
-
-              prefill: {
-                email: 'satyajeetkayal@gamil.com',
-                contact: '8058234114',
-                name: 'satyajeet',
-              },
-              theme: {color: '#53a20e'},
-            };
-            RazorpayCheckout.open(options)
-              .then(data => {
-                // handle success
-                alert(`Success: ${data.razorpay_payment_id}`);
-              })
-              .catch(error => {
-                // handle failure
-                alert(`Error: ${error.code} | ${error.description}`);
-              });
-            RazorpayCheckout.onExternalWalletSelection(data => {
-              alert(`External Wallet Selected: ${data.external_wallet} `);
-            });
-          }}></Button> */}
       <FlatList
         style={{top: 10}}
         data={products}
